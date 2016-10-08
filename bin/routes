@@ -1,0 +1,19 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+
+#Get all restaurants
+
+GET /restaurants controllers.RestaurantsController.getAll
+
+#Get restaurant by id
+GET /restaurants/:id controllers.RestaurantsController.getById(id: Long)
+
+#Save a restaurant
+POST /restaurants controllers.RestaurantsController.save
+
+#Update a restaurant 
+PUT /restaurants/:id controllers.RestaurantsController.update(id: Long)
+
+#Delete a restaurant 
+DELETE /restaurants/:id controllers.RestaurantsController.delete(id: Long)
